@@ -4,7 +4,7 @@ interface SocialProps extends React.HTMLAttributes<HTMLDivElement> {
     text: string;
 }
 
-const Social = ({ type, link, text, ...props }: SocialProps) => {
+const Social = ({ type, link, text }: SocialProps) => {
     const svgPath = () => {
         switch (type) {
             case "github":
