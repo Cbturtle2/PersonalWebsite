@@ -3,13 +3,13 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./index.css";
 import ReactDOM from "react-dom";
 import Resume from "./Resume.tsx";
-import About from "./About.tsx";
+import Homepage from "./Homepage.tsx";
 
 ReactDOM.render(
     <React.StrictMode>
         <Router>
             <Routes>
-                <Route path="/" element={<About />} />
+                <Route path="/" element={<Homepage />} />
                 <Route path="/resume" element={<Resume />} />
             </Routes>
         </Router>
