@@ -9,7 +9,7 @@ const About = () => {
         <div>
             <TopBar />
             <div className="flex items-center justify-between">
-                <div className="flex">
+                <div className="">
                     <h2>About</h2>
                     <p>Hi I'm Charles! 👋🏻</p>
                 </div>
