@@ -2,10 +2,10 @@
 
 @layer base {
   h1 {
-    @apply text-3xl;
+    @apply text-3xl text-green-300 font-bold;
   }
   h2 {
-    @apply text-xl;
+    @apply text-xl text-blue-200;
   }
   h3 {
     @apply text-lg;

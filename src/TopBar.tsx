@@ -21,7 +21,7 @@ const TopBar = () => {
 
     return (
         <>
-            <h1 className="text-red-400">Charles Beam</h1>
+            <h1>Charles Beam</h1>
             <h2>{currText}</h2>
             <div className="flex justify-center gap-2 mb-2">
                 <h3>
