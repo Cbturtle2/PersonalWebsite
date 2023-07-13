@@ -23,6 +23,6 @@ module.exports = {
       { allowConstantExport: true },
     ],
     '@typescript-eslint/no-non-null-assertion': 'off',
-    'no-unused-vars': 'on',
+    'no-unused-vars': 'off',
   },
 }
