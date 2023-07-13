@@ -1,6 +1,6 @@
 import "./App.css";
 import TopBar from "./TopBar";
-import Social from "./components/social";
+import Social from "./components/Social";
 
 const Homepage = () => {
     return (
