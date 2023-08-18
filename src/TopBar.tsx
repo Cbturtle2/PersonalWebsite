@@ -10,6 +10,7 @@ const TopBar = () => {
             for (let index = 0; index <= textToDisplay.length; index++) {
                 const delayStep = 50 / textToDisplay.length;
                 const delay = delayStep * index;
+
                 setTimeout(() => {
                     setCurrText(textToDisplay.slice(0, index));
                 }, delay * index);
