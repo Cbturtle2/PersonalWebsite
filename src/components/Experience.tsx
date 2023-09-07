@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 interface ExperienceProps extends React.HTMLAttributes<HTMLButtonElement> {
     image: string;
     title: string;
