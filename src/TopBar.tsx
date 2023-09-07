@@ -31,6 +31,12 @@ const TopBar = () => {
                 <h3>
                     <a href="/resume">Resume;</a>
                 </h3>
+                <h3>
+                    <a href="/experience">Experience;</a>
+                </h3>
+                <h3>
+                    <a href="/projects">Projects;</a>
+                </h3>
             </div>
         </>
     );
