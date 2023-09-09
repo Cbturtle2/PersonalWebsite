@@ -1,5 +1,4 @@
-import "./App.css";
-import Project from "./components/Project";
+import Project from "../components/Project";
 
 const Projects = () => {
     return (
@@ -30,7 +29,7 @@ const Projects = () => {
                         />
                         <Project
                             title="Personal Website"
-                            description="Made a personal website to demonstrate some of the skills learned while working for Bryx (Typescript/React)"
+                            description="Developed this website to demonstrate some of the skills learned while working for Bryx (Typescript/React)"
                             link="https://github.com/Cbturtle2/PersonalWebsite"
                         />
                     </div>

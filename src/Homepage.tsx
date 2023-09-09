@@ -1,6 +1,6 @@
 import "./App.css";
-import Experiences from "./Experiences";
-import Projects from "./Projects";
+import Experiences from "./pages/Experiences";
+import Projects from "./pages/Projects";
 import Social from "./components/Social";
 
 const Homepage = () => {
@@ -14,7 +14,7 @@ const Homepage = () => {
                         <p>I am a Data Scientist, Web Developer, and third year Computer Science student at Louisiana State University</p>
                         <p>
                             My first year of college was spent at Rochester Institute of Technology where I was on the executive board of
-                            Computer Science house and a maintainer of our internet connected vending machines project
+                            The Computer Science House and a maintainer of our internet connected vending machines project
                         </p>
                         <p>
                             From February 2022 to June 2023 I worked at Bryx bringing a Records Management System from conception to
