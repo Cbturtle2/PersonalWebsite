@@ -5,7 +5,7 @@ const Projects = () => {
         <div>
             <div className="flex flex-col">
                 <div className="flex flex-col justify-start sm:text-left text-center gap-5">
-                    <h2>Projects</h2>
+                    <h2 className="font-bold">Projects</h2>
                     <h4>For a more detailed description of each project please see attached documents</h4>
                     <div className="flex flex-col gap-6">
                         <Project

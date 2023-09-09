@@ -5,10 +5,10 @@
     @apply text-3xl text-green-300 font-bold;
   }
   h2 {
-    @apply text-xl text-blue-200;
+    @apply text-xl text-blue-400;
   }
   h3 {
-    @apply text-lg text-teal-200;
+    @apply text-base;
   }
   h4 {
     @apply text-base;
@@ -17,7 +17,7 @@
     @apply text-inherit; 
   }
   :root {
-    @apply bg-zinc-200 dark:bg-gray-800;
+    @apply bg-[#181E27];
   }
 }
 

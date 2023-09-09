@@ -5,7 +5,7 @@ const Experiences = () => {
         <div>
             <div className="flex flex-col gap-8">
                 <div className="flex flex-col justify-start sm:text-left text-center gap-5">
-                    <h2>Experience</h2>
+                    <h2 className="font-bold">Experience</h2>
                     <h4>
                         For a more detailed description of each position please see{" "}
                         <a href="/resume" className="text-blue-200">

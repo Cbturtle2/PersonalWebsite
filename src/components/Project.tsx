@@ -11,7 +11,7 @@ const Project = ({ title, description, document, video, link }: ProjectProps) =>
         <div className="flex flex-col items-start w-full mb-5 ml-3">
             <div>
                 <div className="flex gap-16 w-full">
-                    <h3 className="font-bold text-center">{title}</h3>
+                    <h3 className="font-bold text-center text-teal-400">{title}</h3>
                     {link && (
                         <a href={link} target="_blank" className="text-blue-200">
                             GitHub Repo
