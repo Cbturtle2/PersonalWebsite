@@ -17,7 +17,7 @@ const Experiences = () => {
                             image="https://pub-4a5c351e48c34a18817678ead6714bda.r2.dev/BryxLogo.jpeg"
                             title="Bryx"
                             jobTitle="Full Time Web Developer"
-                            dates="Sept 2022 - June 2023"
+                            dates="Sept 2022 - July 2023"
                             description="Brought a Records Management System from conception to beta testing. Apart of team that built internal UI library from scratch."
                         />
                         <Experience
