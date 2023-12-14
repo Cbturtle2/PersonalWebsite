@@ -18,27 +18,38 @@ const Experiences = () => {
                             title="Bryx"
                             jobTitle="Full Time Web Developer"
                             dates="Sept 2022 - July 2023"
-                            description="Brought a Records Management System from conception to beta testing. Apart of team that built internal UI library from scratch."
+                            description={[
+                                "• Designed, developed, and maintained a top-tier Records Management System with stringent time-to-market demands and a fluid project scope.",
+                                "• Initiated the creation of a lightweight, customizable, and accessible user interface library that will be implemented in the entire company’s products.",
+                                "• Created and maintained company phone routing system utilizing 3CX through multiple iterations and rewrites to conform with growing company support expectations.",
+                            ]}
                         />
                         <Experience
                             image="https://pub-4a5c351e48c34a18817678ead6714bda.r2.dev/BryxLogo.jpeg"
                             title="Bryx"
                             jobTitle="Summer Intern Web Developer"
                             dates="May 2022 - Aug 2022"
-                            description="Planned Records Management System and built internal systems to support it. Apart of hiring effort to grow and onboard team."
+                            description={[
+                                "• Created a company ID card system utilizing LaTeX for PDF creation.",
+                                "• Met with potential customers to understand market and client demands.",
+                                "• Layed out groundwork for design and project structure of Records Management System.",
+                            ]}
                         />
                         <Experience
                             image="https://pub-4a5c351e48c34a18817678ead6714bda.r2.dev/BryxLogo.jpeg"
                             title="Bryx"
                             jobTitle="Part Time Data Scientist"
                             dates="Feb 2022 - May 2022"
-                            description="Identified trends from past support ticket/phone records and collaborated with support team to improve processes. Developed system to generate PDFs for company badges."
+                            description={[
+                                "• Created scripts to get support tickets and call data from Freshdesk and 3CX. Cleaned and formatted data into insightful metrics for support team stakeholders.",
+                                "• Worked with support team to cut down on total support time to increase throughput for more tickets/calls.",
+                            ]}
                         />
                         <Experience
                             image="https://pub-4a5c351e48c34a18817678ead6714bda.r2.dev/CSH Logo.svg"
                             title="Computer Science House"
-                            jobTitle="Executive Board Member"
-                            dates="Sept 2021 - May 2022"
+                            jobTitle="Executive Board Member (Socials Director)"
+                            dates="Aug 2021 - May 2022"
                             description="On Executive Board managing organization with 100+ members. Responsible for hosting weekly meetings and planning social events."
                         />
                         <Experience
@@ -51,16 +62,13 @@ const Experiences = () => {
                         <Experience
                             image="https://pub-4a5c351e48c34a18817678ead6714bda.r2.dev/NSU Logo.png"
                             title="Louisiana Aerospace Catalyst Experiences for Students"
-                            jobTitle="Programming Manager and Embedded Software Developer"
-                            dates="Aug 2020 - May 2021"
-                            description="In charge of coordinating programming of payload to be launched into upper atmosphere (100,000+ ft). Developed software to control payload and collect data from sensors. Coordinated with team members to ensure all aspects of project were completed on time and tested appropriately."
-                        />
-                        <Experience
-                            image="https://pub-4a5c351e48c34a18817678ead6714bda.r2.dev/NSU Logo.png"
-                            title="Louisiana Aerospace Catalyst Experiences for Students"
-                            jobTitle="Embedded Software Developer"
-                            dates="Dec 2019 - May 2020"
-                            description="Worked with team members to develop software for custom board to control payload and collect data"
+                            jobTitle="Programming Manager"
+                            dates="Dec 2019 - May 2021"
+                            description={[
+                                "• Programming manager on a team that launched a payload to explore saturated vapor pressure as a function of altitude by measuring atmospheric temperature, pressure, relative humidity, and altitude.",
+                                "• Programmed board utilizing C++ and conducted rigorous tests to ensure the program did not fail during flight.",
+                                "• Worked with team members to ensure the program interfaced correctly with other parts of the project.",
+                            ]}
                         />
                     </div>
                 </div>

@@ -3,7 +3,7 @@ interface ExperienceProps extends React.HTMLAttributes<HTMLButtonElement> {
     title: string;
     jobTitle: string;
     dates: string;
-    description: string;
+    description?: string | string[];
 }
 
 const Experience = ({ image, title, jobTitle, dates, description }: ExperienceProps) => {
@@ -18,7 +18,11 @@ const Experience = ({ image, title, jobTitle, dates, description }: ExperiencePr
                     <h2 className="font-bold">|</h2>
                     <h4 className="font-bold 1-1/3 text-center">{dates}</h4>
                 </div>
-                <p className="sm:text-left text-center w-full">{description}</p>
+                {Array.isArray(description) ? (
+                    description.map((line) => <p className="mt-4 sm:text-left text-center w-full">{line}</p>)
+                ) : (
+                    <p className="mt-4 sm:text-left text-center w-full">{description}</p>
+                )}
             </div>
         </div>
     );
