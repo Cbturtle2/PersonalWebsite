@@ -4,7 +4,7 @@ const TopBar = () => {
     const [currText, setCurrText] = useState("");
 
     useEffect(() => {
-        const textToDisplay = "Data Scientist, Web Developer, Cat Dad";
+        const textToDisplay = "Software Engineer, Researcher, Cat Dad";
 
         const displayText = () => {
             for (let index = 0; index <= textToDisplay.length; index++) {
@@ -34,9 +34,9 @@ const TopBar = () => {
                 <h3>
                     <a href="/experience">Experience;</a>
                 </h3>
-                <h3>
+                {/* <h3>
                     <a href="/projects">Projects;</a>
-                </h3>
+                </h3> */}
             </div>
         </>
     );

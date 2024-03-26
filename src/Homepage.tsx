@@ -1,6 +1,6 @@
 import "./App.css";
 import Experiences from "./pages/Experiences";
-import Projects from "./pages/Projects";
+// import Projects from "./pages/Projects";
 import Social from "./components/Social";
 
 const Homepage = () => {
@@ -11,10 +11,14 @@ const Homepage = () => {
                     <div className="flex flex-col justify-start sm:text-left text-center gap-2">
                         <h2 className="font-bold">About</h2>
                         <p>Charles Here! 👋🏻</p>
-                        <p>I am a Data Scientist, Web Developer, and Computer Science Junior at Louisiana State University</p>
+                        <p>I am a Software Engineer, Researcher, and Computer Science Junior at Louisiana State University</p>
                         <p>
-                            My first year of college was spent at Rochester Institute of Technology where I was on the executive board of
-                            The Computer Science House and a maintainer of our internet connected vending machines project
+                            Currently working on a project in collaboration with Our Lady of the Lake helping Doctors better understand and
+                            diagnose conditions like sepsis.
+                        </p>
+                        <p>
+                            Researcher in the Intersectional AI and Security Lab where I am conducting research utilizing large language
+                            models and neural networks under Dr. James Ghawaly.
                         </p>
                         <p>
                             From February 2022 to June 2023 I worked at Bryx bringing a Records Management System from conception to
@@ -33,7 +37,7 @@ const Homepage = () => {
                     <Social type="email" text="charleslbeam@gmail.com" link="mailto: charleslbeam@gmail.com" />
                 </div>
                 <Experiences />
-                <Projects />
+                {/* <Projects /> */}
             </div>
         </div>
     );

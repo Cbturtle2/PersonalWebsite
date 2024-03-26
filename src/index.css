@@ -17,7 +17,7 @@
     @apply text-inherit; 
   }
   :root {
-    @apply bg-[#181E27];
+    @apply dark:bg-[#181E27] bg-[#fafafa];
   }
 }
 
