@@ -21,7 +21,7 @@ const Project = ({ title, description, document, video, link }: ProjectProps) =>
                 <p className="sm:text-left text-center w-full">{description}</p>
             </div>
             <div className="w-full flex sm:flex-row flex-col gap-8">
-                {document && <iframe src={document} className="w-full h-64" title="Resume" />}
+                {document && <embed src={document} className="w-full h-64" title="Resume" type="application/pdf" />}
                 {video && <iframe id="ls_embed_1629576303" src={video} className="w-full h-64" frameBorder="0" scrolling="no" />}
             </div>
         </div>
