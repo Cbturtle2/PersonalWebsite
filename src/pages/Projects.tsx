@@ -6,14 +6,33 @@ const Projects = () => {
             <div className="flex flex-col">
                 <div className="flex flex-col justify-start sm:text-left text-center gap-5">
                     <h2 className="font-bold">Projects</h2>
-                    <h4>For a more detailed description of each project please see attached documents</h4>
+                    <h4>
+                        For a more detailed description of each project please
+                        see attached documents
+                    </h4>
                     <div className="flex flex-col gap-6">
+                        <Project
+                            title="Government RFP Finder (In Progress)"
+                            description={[
+                                "• Creating a mass web scraping tool to scrape government RFPs (Request For Proposal) and allow businesses to filter RFPs to find jobs to submit proposals for. Webpages are scraped daily and each company’s filters are gone through to send a daily update feed of RFPs.",
+                                "• Created an LLM agent for finding URLs and creating/checking generated parsers.",
+                                "• Creating a recommendation system based on governments previous RFPs to find governments that have fewer RFP submissions and thus a higher chance for an RFP to get accepted.",
+                            ]}
+                        />
+                        <Project
+                            title="Sepsis Case Analysis Utilizing LLMs"
+                            description={[
+                                "• Created a system in partnership with Our Lady of the Lake and Cytovale to adjudicate sepsis cases. If deployed, the project could speed up market adoption for these systems by allowing for faster clinical trials.",
+                                "• Worked with a team of four people cleaning/segmenting data and fine-tuning OpenAI’s gpt-3.5 on hundreds of sepsis cases to improve adjudication accuracy. Overall, we got an adjudication accuracy of 82% with 0 false negatives.",
+                                "• Presented to 80+ people at LSU’s AI Symposium.",
+                            ]}
+                        />
                         <Project
                             title="Automated School System for Declaring a Students Location"
                             description="Created a system that allows students to declare their location by scanning
                             a RFID tag"
                             document="https://pub-4a5c351e48c34a18817678ead6714bda.r2.dev/CharlesBeamDistinction.pdf"
-                            video="https://livestream.com/accounts/7024122/events/9625899/videos/220232790/player?width=960&amp;height=540&amp;enableInfo=true&amp;defaultDrawer=feed&amp;autoPlay=false&amp;mute=false"
+                            video="https://www.youtube.com/embed/eyEyOH-wYPo?si=idnhTbmwhouFUZ7V"
                         />
                         <Project
                             title="Programming Manager for LAACES Northwestern State University Team 2020-21"
@@ -26,11 +45,6 @@ const Projects = () => {
                             description="Assisted in the development of a payload utilizing C++. Payload was launched
                             to altitude of over 100,000ft"
                             document="https://pub-4a5c351e48c34a18817678ead6714bda.r2.dev/NSUDemonSats-Assistant.pdf"
-                        />
-                        <Project
-                            title="Personal Website"
-                            description="Developed this website to demonstrate some of the skills learned while working for Bryx (Typescript/React)"
-                            link="https://github.com/Cbturtle2/PersonalWebsite"
                         />
                     </div>
                 </div>

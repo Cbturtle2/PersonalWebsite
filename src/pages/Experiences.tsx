@@ -6,13 +6,17 @@ const Experiences = () => {
             <div className="flex flex-col gap-8">
                 <div className="flex flex-col justify-start sm:text-left text-center gap-5">
                     <h2 className="font-bold">Experience</h2>
-                    <h4>
-                        For a more detailed description of each position please see{" "}
-                        <a href="/resume" className="text-blue-200">
-                            Resume
-                        </a>
-                    </h4>
                     <div className="flex flex-col gap-6">
+                        <Experience
+                            image="https://pub-4a5c351e48c34a18817678ead6714bda.r2.dev/BasfLogo.jpg"
+                            title="BASF"
+                            jobTitle="Data Scientist/Software Engineer Internship"
+                            dates="May 2024 - Aug 2024"
+                            description={[
+                                "• Layed the groundwork for a future LLM project that will organize a file archive containing millions of miscellaneous files allowing for fast file lookup based on LLM-generated tags.",
+                                "• Sped up primary application 12x through standardization which included caching, Kubernetes, partitioning binary files, and only loading relevant parts of the application. Documented process so other applications can be standardized.",
+                            ]}
+                        />
                         <Experience
                             image="https://pub-4a5c351e48c34a18817678ead6714bda.r2.dev/BryxLogo.jpeg"
                             title="Bryx"
