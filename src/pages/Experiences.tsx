@@ -20,7 +20,7 @@ const Experiences = () => {
                         <Experience
                             image="https://pub-4a5c351e48c34a18817678ead6714bda.r2.dev/BryxLogo.jpeg"
                             title="Bryx"
-                            jobTitle="Full Time Web Developer"
+                            jobTitle="Software Engineer Full Time"
                             dates="Sept 2022 - July 2023"
                             description={[
                                 "• Designed, developed, and maintained a top-tier Records Management System with stringent time-to-market demands and a fluid project scope.",
@@ -31,7 +31,7 @@ const Experiences = () => {
                         <Experience
                             image="https://pub-4a5c351e48c34a18817678ead6714bda.r2.dev/BryxLogo.jpeg"
                             title="Bryx"
-                            jobTitle="Summer Intern Web Developer"
+                            jobTitle="Software Engineer Intern"
                             dates="May 2022 - Aug 2022"
                             description={[
                                 "• Created a company ID card system utilizing LaTeX for PDF creation.",
@@ -42,7 +42,7 @@ const Experiences = () => {
                         <Experience
                             image="https://pub-4a5c351e48c34a18817678ead6714bda.r2.dev/BryxLogo.jpeg"
                             title="Bryx"
-                            jobTitle="Part Time Data Scientist"
+                            jobTitle="Data Scientist Part Time"
                             dates="Feb 2022 - May 2022"
                             description={[
                                 "• Created scripts to get support tickets and call data from Freshdesk and 3CX. Cleaned and formatted data into insightful metrics for support team stakeholders.",
