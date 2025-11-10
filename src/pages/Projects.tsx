@@ -12,14 +12,6 @@ const Projects = () => {
                     </h4>
                     <div className="flex flex-col gap-6">
                         <Project
-                            title="Government RFP Finder (In Progress)"
-                            description={[
-                                "• Creating a mass web scraping tool to scrape government RFPs (Request For Proposal) and allow businesses to filter RFPs to find jobs to submit proposals for. Webpages are scraped daily and each company’s filters are gone through to send a daily update feed of RFPs.",
-                                "• Created an LLM agent for finding URLs and creating/checking generated parsers.",
-                                "• Creating a recommendation system based on governments previous RFPs to find governments that have fewer RFP submissions and thus a higher chance for an RFP to get accepted.",
-                            ]}
-                        />
-                        <Project
                             title="Sepsis Case Analysis Utilizing LLMs"
                             description={[
                                 "• Created a system in partnership with Our Lady of the Lake and Cytovale to adjudicate sepsis cases. If deployed, the project could speed up market adoption for these systems by allowing for faster clinical trials.",

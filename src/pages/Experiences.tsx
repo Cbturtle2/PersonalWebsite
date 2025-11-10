@@ -8,45 +8,52 @@ const Experiences = () => {
                     <h2 className="font-bold">Experience</h2>
                     <div className="flex flex-col gap-6">
                         <Experience
+                            image="https://pub-4a5c351e48c34a18817678ead6714bda.r2.dev/AcornBidsLogo.png"
+                            title="AcornBids"
+                            jobTitle="Founder/CEO"
+                            dates="Aug 2025 - Present"
+                            description={[
+                                "• Founded AcornBids, a B2B platform designed to disrupt the government procurement market by providing faster, AI-powered discovery of federal contracts to compete directly with industry incumbents like Deltek GovWin IQ.",
+                                "• Architected and single-handedly developed the platform's end-to-end technical infrastructure, including a nightly data pipeline (SAM.gov API), a React/Tailwind frontend, and a scalable backend with asynchronous queues to power its core AI (RAG) and natural language filtering features.",
+                            ]}
+                        />
+                        <Experience
+                            image="https://pub-4a5c351e48c34a18817678ead6714bda.r2.dev/FMOLHSLogo.png"
+                            title="Franciscan Missionaries of Our Lady Health System"
+                            jobTitle="Information Systems Internship"
+                            dates="Jan 2025 - June 2025"
+                            description={[
+                                "• In charge of $25,000 project to build a policy/procedure management solution. Guided an LSU student team through unique problems they will face and offered guidance as they learned how FMOLHS handled policies/procedures for audits and employee reference.",
+                            ]}
+                        />
+                        <Experience
+                            image="https://pub-4a5c351e48c34a18817678ead6714bda.r2.dev/SigmaLogo.png"
+                            title="Sigma Engineers and Constructors"
+                            jobTitle="Data Scientist/Software Engineer Internship"
+                            dates="Sept 2024 - June 2025"
+                            description={[
+                                "• Created a conversion program to translate Plant 3D piping files into Aspen HYSYS process flow simulation files, significantly speeding up the creation of new ISO diagrams in Aspen HYSYS.",
+                                "• Found valuable insights into how users were interacting with internal programs by creating a boutique logging system to log user engagement. Compiled data to help steer product development.",
+                            ]}
+                        />
+                        <Experience
                             image="https://pub-4a5c351e48c34a18817678ead6714bda.r2.dev/BasfLogo.jpg"
                             title="BASF"
                             jobTitle="Data Scientist/Software Engineer Internship"
                             dates="May 2024 - Aug 2024"
                             description={[
                                 "• Layed the groundwork for a future LLM project that will organize a file archive containing millions of miscellaneous files allowing for fast file lookup based on LLM-generated tags.",
-                                "• Sped up primary application 12x through standardization which included caching, Kubernetes, partitioning binary files, and only loading relevant parts of the application. Documented process so other applications can be standardized.",
+                                "• Sped up primary application 12x through standardization which included caching, Kubernetes deployment, dynamically partitioning binary files, and lazy loading parts of the application. Documented process so other applications can be standardized.",
                             ]}
                         />
                         <Experience
                             image="https://pub-4a5c351e48c34a18817678ead6714bda.r2.dev/BryxLogo.jpeg"
                             title="Bryx"
-                            jobTitle="Full Time Web Developer"
-                            dates="Sept 2022 - July 2023"
+                            jobTitle="Software Engineer (Part Time → Internship → Full Time)"
+                            dates="Feb 2022 - July 2023"
                             description={[
                                 "• Designed, developed, and maintained a top-tier Records Management System with stringent time-to-market demands and a fluid project scope.",
-                                "• Initiated the creation of a lightweight, customizable, and accessible user interface library that will be implemented in the entire company’s products.",
-                                "• Created and maintained company phone routing system utilizing 3CX through multiple iterations and rewrites to conform with growing company support expectations.",
-                            ]}
-                        />
-                        <Experience
-                            image="https://pub-4a5c351e48c34a18817678ead6714bda.r2.dev/BryxLogo.jpeg"
-                            title="Bryx"
-                            jobTitle="Summer Intern Web Developer"
-                            dates="May 2022 - Aug 2022"
-                            description={[
-                                "• Created a company ID card system utilizing LaTeX for PDF creation.",
-                                "• Met with potential customers to understand market and client demands.",
-                                "• Layed out groundwork for design and project structure of Records Management System.",
-                            ]}
-                        />
-                        <Experience
-                            image="https://pub-4a5c351e48c34a18817678ead6714bda.r2.dev/BryxLogo.jpeg"
-                            title="Bryx"
-                            jobTitle="Part Time Data Scientist"
-                            dates="Feb 2022 - May 2022"
-                            description={[
-                                "• Created scripts to get support tickets and call data from Freshdesk and 3CX. Cleaned and formatted data into insightful metrics for support team stakeholders.",
-                                "• Worked with support team to cut down on total support time to increase throughput for more tickets/calls.",
+                                "• Initiated the creation of a lightweight, customizable, and accessible user interface library that will be implemented in the entire company's products.",
                             ]}
                         />
                         <Experience

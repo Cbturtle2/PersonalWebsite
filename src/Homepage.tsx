@@ -11,22 +11,21 @@ const Homepage = () => {
                 <div className="flex items-center justify-between flex-col sm:flex-row gap-5">
                     <div className="flex flex-col justify-start sm:text-left text-center gap-2">
                         <h2 className="font-bold">About</h2>
-                        <p>Charles Here! 👋🏻</p>
+                        <p>Charles Here!</p>
                         <p>
-                            I am a Computer Science Senior at Louisiana State
-                            University.
+                            I am a Computer Science graduate from Louisiana State
+                            University (Class of 2025).
                         </p>
                         <p>
-                            I am currently working on a project in collaboration
-                            with Our Lady of the Lake Hospital and Cytovale to
-                            adjudicate sepsis cases utilizing large language
-                            models.
+                            I am the Founder and CEO of AcornBids, a B2B platform
+                            disrupting the government procurement market by providing
+                            faster, AI-powered discovery of federal contracts.
                         </p>
                         <p>
-                            I am also an undergraduate researcher in the
-                            Intersectional AI and Security Lab where I am
-                            conducting research utilizing large language models
-                            and neural networks under Dr. James Ghawaly.
+                            Previously, I worked on AI research projects including
+                            sepsis case adjudication with Our Lady of the Lake Hospital
+                            and Cytovale, and conducted research in the Intersectional
+                            AI and Security Lab at LSU.
                         </p>
                     </div>
                     <img
