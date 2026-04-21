@@ -1,46 +1,127 @@
 @tailwind base;
 
 @layer base {
-  h1 {
-    @apply text-3xl text-green-300 font-bold;
-  }
-  h2 {
-    @apply text-xl text-blue-400;
-  }
-  h3 {
-    @apply text-base;
-  }
-  h4 {
-    @apply text-base;
-  }
-  a {
-    @apply text-inherit; 
-  }
-  :root {
-    @apply dark:bg-[#181E27] bg-[#fafafa];
-  }
+    :root {
+        color-scheme: dark;
+    }
+
+    body {
+        background-color: #070c18;
+        color: #e2e8f0;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+        font-weight: 700;
+        letter-spacing: -0.025em;
+        color: inherit;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: inherit;
+    }
+
+    h3 {
+        font-size: 1.125rem;
+        font-weight: 500;
+        color: inherit;
+    }
+
+    a {
+        color: inherit;
+        transition: color 0.2s ease;
+    }
 }
 
 @tailwind components;
+
+@layer components {
+    .gradient-text {
+        background: linear-gradient(135deg, #a78bfa 0%, #22d3ee 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .card {
+        background-color: #0d1628;
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        border-radius: 0.75rem;
+        transition:
+            border-color 0.2s ease,
+            background-color 0.2s ease;
+    }
+
+    .card:hover {
+        border-color: rgba(255, 255, 255, 0.14);
+        background-color: #0f1a30;
+    }
+
+    .section-label {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: #475569;
+        font-weight: 500;
+    }
+
+    .tag {
+        font-size: 0.7rem;
+        padding: 0.15rem 0.6rem;
+        border-radius: 9999px;
+        background-color: rgba(139, 92, 246, 0.1);
+        color: #a78bfa;
+        border: 1px solid rgba(139, 92, 246, 0.2);
+    }
+}
+
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        sans-serif;
+    line-height: 1.6;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  min-width: 320px;
-  min-height: 100vh;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* Spring entrance animation — overshoots then settles */
+@keyframes springIn {
+    0%   { opacity: 0; transform: translateY(28px) scale(0.97); }
+    60%  { opacity: 1; transform: translateY(-5px) scale(1.01); }
+    80%  { transform: translateY(2px) scale(1.0); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.spring-in {
+    animation: springIn 0.65s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+/* Minimal, dark scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #070c18;
+}
+::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #334155;
 }

@@ -1,4 +1,4 @@
-interface ProjectProps extends React.HTMLAttributes<HTMLButtonElement> {
+interface ProjectProps {
     title: string;
     description: string | string[];
     document?: string;
@@ -6,61 +6,66 @@ interface ProjectProps extends React.HTMLAttributes<HTMLButtonElement> {
     link?: string;
 }
 
-const Project = ({
-    title,
-    description,
-    document,
-    video,
-    link,
-}: ProjectProps) => {
+const Project = ({ title, description, document, video, link }: ProjectProps) => {
     return (
-        <div className="flex flex-col items-start w-full mb-5 ml-3">
-            <div>
-                <div className="flex gap-16 w-full">
-                    <h3 className="font-bold text-center text-teal-400">
-                        {title}
-                    </h3>
-                    {link && (
-                        <a
-                            href={link}
-                            target="_blank"
-                            className="text-blue-200"
+        <div className="card p-6">
+            <div className="flex items-start justify-between gap-4 mb-4">
+                <h3 className="font-semibold text-slate-100 leading-snug">
+                    {title}
+                </h3>
+                {link && (
+                    <a
+                        href={link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-shrink-0 text-xs text-violet-400 hover:text-violet-300 border border-violet-500/30 px-2.5 py-1 rounded-full transition-colors"
+                    >
+                        GitHub ↗
+                    </a>
+                )}
+            </div>
+
+            {Array.isArray(description) ? (
+                <ul className="space-y-2 mb-4">
+                    {description.map((line, i) => (
+                        <li
+                            key={i}
+                            className="text-slate-400 text-sm leading-relaxed"
                         >
-                            GitHub Repo
-                        </a>
+                            {line}
+                        </li>
+                    ))}
+                </ul>
+            ) : (
+                <p className="text-slate-400 text-sm leading-relaxed mb-4">
+                    {description}
+                </p>
+            )}
+
+            {(document || video) && (
+                <div className="grid sm:grid-cols-2 gap-4 mt-4">
+                    {document && (
+                        <div className="rounded-lg overflow-hidden border border-white/8">
+                            <embed
+                                src={document}
+                                className="w-full h-56"
+                                type="application/pdf"
+                            />
+                        </div>
+                    )}
+                    {video && (
+                        <div className="rounded-lg overflow-hidden border border-white/8">
+                            <iframe
+                                src={video}
+                                className="w-full h-56"
+                                frameBorder="0"
+                                scrolling="no"
+                                allowFullScreen
+                            />
+                        </div>
                     )}
                 </div>
-                {Array.isArray(description) ? (
-                    description.map((line) => (
-                        <p className="sm:text-left text-center w-full py-2">
-                            {line}
-                        </p>
-                    ))
-                ) : (
-                    <p className="sm:text-left text-center w-full">
-                        {description}
-                    </p>
-                )}
-            </div>
-            <div className="w-full flex sm:flex-row flex-col gap-8">
-                {document && (
-                    <embed
-                        src={document}
-                        className="w-full h-64"
-                        title="Resume"
-                        type="application/pdf"
-                    />
-                )}
-                {video && (
-                    <iframe
-                        id="ls_embed_1629576303"
-                        src={video}
-                        className="w-full h-64"
-                        frameBorder="0"
-                        scrolling="no"
-                    />
-                )}
-            </div>
+            )}
         </div>
     );
 };
