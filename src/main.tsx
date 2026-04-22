@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import './index.css';
 import Homepage from './Homepage';
 import Resume from './pages/Resume';
@@ -11,9 +11,16 @@ import BlogPost from './pages/BlogPost';
 import InTheNews from './pages/InTheNews';
 import TopBar from './TopBar';
 
+function ScrollToTop() {
+    const { pathname } = useLocation();
+    useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
+    return null;
+}
+
 createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
         <Router>
+            <ScrollToTop />
             <TopBar />
             <Routes>
                 <Route path="/" element={<Homepage />} />
