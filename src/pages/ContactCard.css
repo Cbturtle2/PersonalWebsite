@@ -1,0 +1,294 @@
+.contact-page {
+    --contact-ink: #edf4ff;
+    --contact-muted: #91a0b8;
+    align-items: center;
+    background:
+        radial-gradient(circle at 50% -15%, rgba(88, 73, 192, 0.18), transparent 34rem),
+        linear-gradient(160deg, #060914 0%, #090d19 54%, #070b13 100%);
+    color: var(--contact-ink);
+    display: flex;
+    justify-content: center;
+    min-height: 100svh;
+    overflow: hidden;
+    padding: 1.25rem;
+    position: relative;
+}
+
+.contact-orb {
+    border-radius: 999px;
+    filter: blur(1px);
+    opacity: 0.7;
+    pointer-events: none;
+    position: absolute;
+}
+
+.contact-orb-one {
+    background: rgba(129, 92, 246, 0.12);
+    height: 18rem;
+    right: -9rem;
+    top: 11%;
+    width: 18rem;
+}
+
+.contact-orb-two {
+    background: rgba(34, 211, 238, 0.08);
+    bottom: 8%;
+    height: 14rem;
+    left: -8rem;
+    width: 14rem;
+}
+
+.contact-shell {
+    background: rgba(12, 18, 33, 0.82);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 1.65rem;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.34);
+    max-width: 28rem;
+    padding: 1.25rem;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.contact-share {
+    align-items: center;
+    background: rgba(255, 255, 255, 0.045);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+    color: #b8c5d9;
+    cursor: pointer;
+    display: flex;
+    font: inherit;
+    font-size: 0.75rem;
+    gap: 0.45rem;
+    margin-left: auto;
+    min-height: 2.35rem;
+    padding: 0.45rem 0.8rem;
+    transition: background 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.contact-share:hover {
+    background: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+.contact-icon {
+    flex: 0 0 auto;
+    height: 1.15rem;
+    width: 1.15rem;
+}
+
+.contact-profile {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: -0.3rem;
+    text-align: center;
+}
+
+.contact-photo-wrap {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.contact-photo-glow {
+    background: linear-gradient(135deg, #a78bfa, #22d3ee);
+    border-radius: 1.75rem;
+    filter: blur(1rem);
+    inset: -0.25rem;
+    opacity: 0.22;
+    position: absolute;
+}
+
+.contact-photo {
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 1.6rem;
+    display: block;
+    height: 7.2rem;
+    object-fit: cover;
+    object-position: center 17%;
+    position: relative;
+    transform: scaleX(-1);
+    width: 7.2rem;
+}
+
+.contact-status {
+    background: #4ade80;
+    border: 3px solid #0c1221;
+    border-radius: 999px;
+    bottom: 0.25rem;
+    height: 1.05rem;
+    position: absolute;
+    right: 0.2rem;
+    width: 1.05rem;
+}
+
+.contact-eyebrow {
+    color: #8b7bf6;
+    font-size: 0.67rem;
+    font-weight: 650;
+    letter-spacing: 0.17em;
+    margin: 0 0 0.35rem;
+    text-transform: uppercase;
+}
+
+.contact-profile h1 {
+    color: var(--contact-ink);
+    font-size: clamp(2rem, 9vw, 2.55rem);
+    font-weight: 790;
+    letter-spacing: -0.055em;
+    line-height: 1.05;
+    margin: 0;
+}
+
+.contact-role {
+    color: #c3cede;
+    font-size: 0.88rem;
+    margin: 0.5rem 0 0;
+}
+
+.contact-intro {
+    color: var(--contact-muted);
+    font-size: 0.78rem;
+    line-height: 1.55;
+    margin: 0.8rem auto 0;
+    max-width: 20rem;
+}
+
+.contact-save {
+    align-items: center;
+    background: linear-gradient(120deg, #7657e8, #287fcf);
+    border: 0;
+    border-radius: 0.85rem;
+    box-shadow: 0 0.8rem 2.1rem rgba(91, 78, 210, 0.22);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font: inherit;
+    font-size: 0.88rem;
+    font-weight: 650;
+    gap: 0.55rem;
+    justify-content: center;
+    margin-top: 1.35rem;
+    min-height: 3rem;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    transition: filter 160ms ease, transform 160ms ease;
+    width: 100%;
+}
+
+.contact-save:hover {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    margin-top: 1rem;
+}
+
+.contact-link {
+    align-items: center;
+    background: rgba(255, 255, 255, 0.032);
+    border: 1px solid rgba(255, 255, 255, 0.065);
+    border-radius: 0.85rem;
+    display: flex;
+    gap: 0.8rem;
+    min-height: 3.8rem;
+    padding: 0.65rem 0.8rem;
+    text-decoration: none;
+    transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.contact-link:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.13);
+    transform: translateY(-1px);
+}
+
+.contact-link-icon {
+    align-items: center;
+    background: rgba(126, 101, 235, 0.12);
+    border: 1px solid rgba(139, 119, 232, 0.12);
+    border-radius: 0.7rem;
+    color: #aa9df0;
+    display: flex;
+    height: 2.45rem;
+    justify-content: center;
+    width: 2.45rem;
+}
+
+.contact-link-copy {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.contact-link-copy strong {
+    color: #dce6f5;
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+
+.contact-link-copy small {
+    color: #74839b;
+    font-size: 0.68rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.contact-arrow {
+    color: #526078;
+    font-size: 0.9rem;
+    padding-right: 0.2rem;
+}
+
+.contact-site {
+    color: #55647b;
+    display: block;
+    font-size: 0.67rem;
+    letter-spacing: 0.08em;
+    margin-top: 1.15rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.contact-site:hover {
+    color: #91a0b8;
+}
+
+.contact-share:focus-visible,
+.contact-save:focus-visible,
+.contact-link:focus-visible,
+.contact-site:focus-visible {
+    outline: 2px solid #67d4ed;
+    outline-offset: 3px;
+}
+
+@media (max-width: 420px) {
+    .contact-page {
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .contact-shell {
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        min-height: 100svh;
+        padding: 1rem 1.05rem 1.4rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .contact-share,
+    .contact-save,
+    .contact-link {
+        transition: none;
+    }
+}

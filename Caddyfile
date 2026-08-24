@@ -24,6 +24,10 @@
     # enable gzipping responses
     encode gzip
 
+    # Keep the direct-share contact card out of search results.
+    @contact_card path /qr /qr/*
+    header @contact_card X-Robots-Tag "noindex, nofollow"
+
     # serve files from 'dist'
     file_server
 
