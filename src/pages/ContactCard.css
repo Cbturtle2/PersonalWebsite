@@ -234,14 +234,6 @@
     font-weight: 600;
 }
 
-.contact-link-copy small {
-    color: #74839b;
-    font-size: 0.68rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
 .contact-arrow {
     color: #526078;
     font-size: 0.9rem;
@@ -291,4 +283,10 @@
     .contact-link {
         transition: none;
     }
+}
+
+.contact-acorn {
+    background: currentColor;
+    mask: url('../assets/acornbids-acorn.svg') center / contain no-repeat;
+    -webkit-mask: url('../assets/acornbids-acorn.svg') center / contain no-repeat;
 }

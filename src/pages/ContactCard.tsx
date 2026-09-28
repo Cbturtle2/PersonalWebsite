@@ -5,12 +5,11 @@ import './ContactCard.css';
 type IconName =
     | 'download'
     | 'email'
-    | 'github'
-    | 'globe'
+    | 'acorn'
     | 'linkedin'
     | 'share';
 
-const iconPaths: Record<IconName, React.ReactNode> = {
+const iconPaths: Record<Exclude<IconName, 'acorn'>, React.ReactNode> = {
     download: (
         <>
             <path d="M12 3v12" />
@@ -22,17 +21,6 @@ const iconPaths: Record<IconName, React.ReactNode> = {
         <>
             <rect x="3" y="5" width="18" height="14" rx="2" />
             <path d="m3 7 9 6 9-6" />
-        </>
-    ),
-    github: (
-        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.3 4 5 5 0 0 0 19.1.5S17.9.1 15 2a13.4 13.4 0 0 0-7 0C5.1.1 3.9.5 3.9.5A5 5 0 0 0 3.7 4a5.4 5.4 0 0 0-1.5 3.7c0 5.4 3.5 6.6 6.8 7A4.8 4.8 0 0 0 8 18v4" />
-    ),
-    globe: (
-        <>
-            <circle cx="12" cy="12" r="9" />
-            <path d="M3 12h18" />
-            <path d="M12 3a14.5 14.5 0 0 1 0 18" />
-            <path d="M12 3a14.5 14.5 0 0 0 0 18" />
         </>
     ),
     linkedin: (
@@ -53,7 +41,9 @@ const iconPaths: Record<IconName, React.ReactNode> = {
     ),
 };
 
-const Icon = ({ name }: { name: IconName }) => (
+const Icon = ({ name }: { name: IconName }) => name === 'acorn' ? (
+    <span aria-hidden="true" className="contact-icon contact-acorn" />
+) : (
     <svg
         aria-hidden="true"
         className="contact-icon"
@@ -69,34 +59,24 @@ const Icon = ({ name }: { name: IconName }) => (
 );
 
 const contactLinks: Array<{
-    detail: string;
     href: string;
     icon: IconName;
     label: string;
 }> = [
     {
-        detail: 'charleslbeam@gmail.com',
-        href: 'mailto:charleslbeam@gmail.com',
+        href: 'mailto:charles@acornbids.com',
         icon: 'email',
         label: 'Email',
     },
     {
-        detail: 'Connect professionally',
         href: 'https://www.linkedin.com/in/charles-beam-183913220/',
         icon: 'linkedin',
         label: 'LinkedIn',
     },
     {
-        detail: 'Building better federal discovery',
         href: 'https://acornbids.com',
-        icon: 'globe',
+        icon: 'acorn',
         label: 'AcornBids',
-    },
-    {
-        detail: '@Cbturtle2',
-        href: 'https://github.com/Cbturtle2',
-        icon: 'github',
-        label: 'GitHub',
     },
 ];
 
@@ -203,7 +183,7 @@ const ContactCard = () => {
                 </a>
 
                 <div className="contact-links" aria-label="Contact links">
-                    {contactLinks.map(({ detail, href, icon, label }) => (
+                    {contactLinks.map(({ href, icon, label }) => (
                         <a
                             className="contact-link"
                             href={href}
@@ -216,7 +196,6 @@ const ContactCard = () => {
                             </span>
                             <span className="contact-link-copy">
                                 <strong>{label}</strong>
-                                <small>{detail}</small>
                             </span>
                             <span className="contact-arrow" aria-hidden="true">
                                 ↗
